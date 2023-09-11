@@ -14,10 +14,10 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		printf("i%", digit);
+		putchar(digit);
 		digit++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
