@@ -4,10 +4,10 @@
  * more_numbers - print number from 0 to 14, ten times
  *		only using _putchar three times
  *
- * Return: Always 0 .
+ * Return: Always 0 (Success)
 */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 	int num, row, count;
 
