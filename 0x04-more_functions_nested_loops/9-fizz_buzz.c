@@ -21,14 +21,16 @@ int main(void)
 		else if (num % 5 == 0 && !(num % 3 == 0))
 			printf("Buzz");
 		else if (num % 3 == 0 && num % 5 == 0)
-			rintf(FizzBuzz);
+			rintf("FizzBuzz");
 		else
 			printf("%d", num);
+
 		if (num != 100)
-			printf(' ');
+			printf(" ");
 		else
-			printf('\n');
+			printf("\n");
 	}
+
 	return (0);
 }
 
