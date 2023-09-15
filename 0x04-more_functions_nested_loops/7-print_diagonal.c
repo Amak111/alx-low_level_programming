@@ -3,13 +3,12 @@
 /**
  * print_diagonal - print a diagonal line
  *
- * @n: is the number of time of times the \
+ * @n: is the number of time of times the \ character
  *	should be printed
 */
 
 void print_diagonal(int n)
 {
-
 	int space, post;
 
 	if (n <= 0)
@@ -20,7 +19,7 @@ void print_diagonal(int n)
 		{
 			for (space = 1; space <= post; space++)
 				_putchar(' ');
-			_putchar(92); /*equal '\'*/
+			_putchar('\'); /*equal \ char*/
 			_putchar('\n');
 		}
 	}
