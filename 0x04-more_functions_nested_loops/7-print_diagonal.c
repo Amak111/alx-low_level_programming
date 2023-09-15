@@ -9,17 +9,17 @@
 
 void print_diagonal(int n)
 {
-	int space, postn;
+	int space, postN;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (postn = 1; postn <= n; postn++)
+		for (postN = 1; postN <= n; postN++)
 		{
-			for (space = 1; space <= postn; space++)
+			for (space = 1; space <= postN; space++)
 				_putchar(' ');
-			_putchar(92); /*equal \ char*/
+			_putchar(92); /*equal '/' char*/
 			_putchar('\n');
 		}
 	}
