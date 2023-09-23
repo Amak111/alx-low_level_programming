@@ -5,12 +5,12 @@
  *	two strings.
  *
  * @dest: pointer to destnation input
- * @sre: pointer to source input
+ * @src: pointer to source input
  *
  * Return: pointer to resuling string @dest
 */
 
-char *_strcat(char *dest, char *sre)
+char *_strcat(char *dest, char *src)
 {
 	int a, a2;
 
