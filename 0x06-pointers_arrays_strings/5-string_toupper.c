@@ -3,20 +3,20 @@
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase.
  *
- * @str: string to return.
+ * @s: string to return.
  * Return: string.
 */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 	int x;
 
-	for (x = 0, str[x] != '\0'; x++)
+	for (x = 0, s[x] != '\0'; x++)
 	{
-		if (str[x] >= 97 && str[x] <= 122)
+		if (s[x] >= 97 && s[x] <= 122)
 		{
-			str[x] = str[x] - 32;
+			s[x] = s[x] - 32;
 		}
 	}
-	return (str);
+	return (s);
 }
