@@ -11,7 +11,7 @@
  * Return: @dest
 */
 
-char *_strcat(char *dest, char *sre, int n)
+char *_strncat(char *dest, char *sre, int n)
 {
 	int a, b;
 
