@@ -5,13 +5,13 @@
  *	two strings.
  *
  * @dest: pointer to destnation input
- * @sre: pointer to source input
+ * @src: pointer to source input
  * @n: most number of bytes from @src
  *
  * Return: @dest
 */
 
-char *_strncat(char *dest, char *sre, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int c, i;
 
