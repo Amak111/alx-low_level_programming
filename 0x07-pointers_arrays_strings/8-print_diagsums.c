@@ -7,6 +7,7 @@
  * @a: Secound array
  * @size: Size or array
 */
+
 void print_diagsums(int *a, int size)
 {
 	int x, y = 0, z = 0;
