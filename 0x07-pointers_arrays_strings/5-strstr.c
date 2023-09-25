@@ -1,21 +1,28 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints the chessboard.
+ * *_strstr - function finds the first occurrence of the substring
  *
- * @a: The rows
- * Return: Nothing.
+ * @haystack: input parameter 1
+ * @needle: input parameter 2
+ * Return: Always 0 (Success)
 */
-void print_chessboard(char (*a)[8])
-{
-	int i, j;
 
-	for (i = 0; i < 8; i++)
+char *_strstr(char *haystack, char *needle)
+{
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (j = 0; j < 8; j++)
-		{
-			_putchar(a[i][j]);
-		}
-		_putchar('\n');
+		char *l = haystack;
+		char *p = needle;
+
+	while (*l == *p && *p != '\0')
+	{
+		l++;
+		p++;
 	}
+	if (*p == '\0')
+		return (haystack);
+	}
+
+	return (0);
 }
