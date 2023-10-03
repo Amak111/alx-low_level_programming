@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, char *n;
+	int sum = 0;
+	char *n;
 
 	while (--argc)
 	{
