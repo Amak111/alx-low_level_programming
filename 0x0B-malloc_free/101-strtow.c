@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * wrdcnt - Counts the number of words in the string
  * @s: string
  * Return: int
 */
-
 int wrdcnt(char *s)
 {
 	int i, n = 0;
@@ -23,13 +21,11 @@ int wrdcnt(char *s)
 	n++;
 	return (n);
 }
-
 /**
  * *strtow - splits a string into words.
  * @str: String to splits
  * Return: Pointer to array of strings
 */
-
 char **strtow(char *str)
 {
 	int i, j, k, l, n = 0, wc = 0;
@@ -37,7 +33,6 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
@@ -74,4 +69,3 @@ char **strtow(char *str)
 	}
 	return (x);
 }
-
