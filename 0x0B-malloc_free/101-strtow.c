@@ -42,7 +42,7 @@ char **strtow(char *str)
 	if (n == 1)
 		return (NULL);
 	x = (char **)malloc(n * sizeof(char *));
-	if (w == NULL)
+	if (x == NULL)
 		return (NULL);
 	x[n - 1] = NULL;
 	i = 0;
@@ -52,7 +52,7 @@ char **strtow(char *str)
 		{
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;
-			j++
+			j++;
 		x[wc] = (char *)malloc(j * sizeof(char));
 			j--;
 			if (x[wc] == NULL)
@@ -71,5 +71,7 @@ char **strtow(char *str)
 		}
 		else
 			i++;
+	}
 	return (x);
 }
+
