@@ -10,7 +10,7 @@
  * Return: Pointer to space in mempry contain concatenated string
 */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j, len_1, len_2;
