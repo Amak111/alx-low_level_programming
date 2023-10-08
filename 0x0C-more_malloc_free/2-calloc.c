@@ -27,16 +27,16 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *f;
+	void *a;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	f = malloc(sizeof(int) * nmemb);
+	a = malloc(sizeof(int) * nmemb);
 
-	if (f == 0)
+	if (a == 0)
 		return (NULL);
 
-	_memset(f, 0, sizeof(int) * nmemb);
+	_memset(a, 0, sizeof(int) * nmemb);
 
-	return (f);
+	return (a);
 }
