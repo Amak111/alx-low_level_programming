@@ -7,7 +7,7 @@
 */
 void format_char(char *separator, va_list ag)
 {
-	prinf("%s%c", separator, va_arg(ag, int));
+	printf("%s%c", separator, va_arg(ag, int));
 }
 
 /**
@@ -17,7 +17,7 @@ void format_char(char *separator, va_list ag)
 */
 void format_int(char *separator, va_list ag)
 {
-	prinf("%s%d", separator, va_arg(ag, int));
+	printf("%s%d", separator, va_arg(ag, int));
 }
 
 /**
@@ -27,7 +27,7 @@ void format_int(char *separator, va_list ag)
 */
 void format_float(char *separator, va_list ag)
 {
-	prinf("%s%f", separator, va_arg(ag, double));
+	printf("%s%f", separator, va_arg(ag, double));
 }
 
 /**
@@ -37,7 +37,7 @@ void format_float(char *separator, va_list ag)
 */
 void format_string(char *separator, va_list ag)
 {
-	char *str = vaarg(ag, char *);
+	char *str = va_arg(ag, char *);
 
 	switch ((int)(!str))
 	case 1:
@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	va_start(ap, format);
+	va_start(ag, format);
 	while (format && format[i])
 	{
 		j = 0;
